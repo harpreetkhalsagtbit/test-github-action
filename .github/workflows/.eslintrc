@@ -1,56 +1,17 @@
 {
-	"extends": ["airbnb", "prettier", "prettier/react"],
-	"plugins": ["prettier", "react", "alternate-import"],
-	"parser": "babel-eslint",
-	"rules": {
-		"react/boolean-prop-naming": "off",
-		"linebreak-style": 0,
-		"react/jsx-filename-extension": [
-			1,
-			{
-				"extensions": [".js", ".jsx"]
-			}
-		],
-		"react/prop-types": 0,
-		"no-underscore-dangle": 0,
-		"import/imports-first": ["error", "absolute-first"],
-		"import/newline-after-import": "error",
-		"prettier/prettier": "error",
-		"no-unused-expressions": [
-			"error",
-			{
-				"allowTernary": true
-			}
-		],
-		"alternate-import/restricted-direct-import": "error"
-	},
-	"settings": {
-		"alternate-import": {
-			"alternatePackagesMap": [
-				{
-					"original": "react-bootstrap",
-					"alternate": "/Client/helpers/react-bootstrap-imports.js"
-				},
-				{
-					"original": "@fortawesome/free-solid-svg-icons",
-					"alternate": "/Client/helpers/fort-awesome-imports.js"
-				}
-			],
-			"customFileImportRootPrefix": "@"
-		},
-		"import/resolver": {
-			"babel-plugin-root-import": {}
-		}
-	},
-	"globals": {
-		"alert": true,
-		"confirm": true,
-		"window": true,
-		"document": true,
-		"localStorage": true,
-		"FormData": true,
-		"FileReader": true,
-		"Blob": true,
-		"navigator": true
-	}
+    "extends": "eslint:recommended",
+    "rules": {
+        // enable additional rules
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+
+        // override default options for rules from base configurations
+        "comma-dangle": ["error", "always"],
+        "no-cond-assign": ["error", "always"],
+
+        // disable rules from base configurations
+        "no-console": "off",
+    }
 }
