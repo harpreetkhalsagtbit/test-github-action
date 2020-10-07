@@ -1,0 +1,7 @@
+/*
+!apiControllers/
+!Client/
+!middlewares/
+!models/headerBiddingModel.js
+!services/genieeAdSyncService/cdnSyncService/
+**/*.html
