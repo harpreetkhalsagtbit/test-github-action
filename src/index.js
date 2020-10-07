@@ -1,6 +1,7 @@
-console.log(abc.xyzz)
+console.log(abc.xyzz());
 
 var k = 5;
-console.log(k)
-let k = 4;
-const k = 5;
+console.log(k);
+
+var k1 = 4;
+var k2 = 5;
