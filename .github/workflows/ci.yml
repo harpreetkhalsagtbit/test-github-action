@@ -17,7 +17,7 @@ jobs:
       - name: Run eslint on changed files
         uses: tj-actions/eslint-changed-files@v8
         with:
-          config_path: "./.eslintrc"
+          config_path: ".eslintrc"
           ignore_path: ""
           extensions: "ts,tsx,js,jsx"
           extra_args: "--max-warnings=0"
