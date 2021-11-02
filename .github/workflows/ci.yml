@@ -20,7 +20,7 @@ jobs:
           # extensions: "ts,tsx,js,jsx"
           # extra_args: "--max-warnings=0"
           token: ${{ secrets.TOKEN }}
-          config_path: "./.eslintrc"
+          config_path: "../workspace/eslintrc"
           ignore_path: ""
           extensions: "ts,tsx,js,jsx"
           extra_args: "--max-warnings=0"
