@@ -17,6 +17,7 @@ jobs:
       - name: Run eslint on changed files
         uses: tj-actions/eslint-changed-files@v8
         with:
+          token: ${{ secrets.TOKEN }}
           config_path: ".eslintrc"
           ignore_path: ""
           extensions: "ts,tsx,js,jsx"
