@@ -14,5 +14,8 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Run eslint on changed files
+        uses: tj-actions/eslint-changed-files@v8
+
       - name: Lint
         run: npm run lint
