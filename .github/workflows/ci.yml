@@ -1,19 +1,74 @@
+---
+#################################
+#################################
+## Super Linter GitHub Actions ##
+#################################
+#################################
 name: CI
-on: [pull_request]
+
+#
+# Documentation:
+# https://help.github.com/en/articles/workflow-syntax-for-github-actions
+#
+
+#############################
+# Start the job on all push #
+#############################
+on:
+  # push:
+  #   branches-ignore: [master, main]
+  #   # Remove the line above to run when pushing to master
+  pull_request:
+    branches: [master, main]
+
+###############
+# Set the Job #
+###############
 jobs:
   test:
-    name: runner / eslint
+    # Name the Job
+    name: Lint Code Base
+    # Set the agent to run on
     runs-on: ubuntu-latest
+
+    ##################
+    # Load all steps #
+    ##################
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      ##########################
+      # Checkout the code base #
+      ##########################
+      - name: Checkout Code
+        uses: actions/checkout@v2
         with:
-          node-version: '14'
-      - run: npm install
-      - uses: reviewdog/action-eslint@v1
-        with:
-          reporter: github-pr-check
-          eslint_flags: 'pages/'
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      ################################
+      # Run Linter against code base #
+      ################################
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+# name: CI
+# on: [pull_request]
+# jobs:
+#   test:
+#     name: runner / eslint
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: '14'
+#       - run: npm install
+#       - uses: reviewdog/action-eslint@v1
+#         with:
+#           reporter: github-pr-check
+#           eslint_flags: 'pages/'
 # name: CI
 
 # on: [pull_request, pull_request_target]
