@@ -1,6 +1,9 @@
 #/*
 package.json
 package-lock.json
+<<<<<<< HEAD
 .eslintrc.json
+=======
+>>>>>>> c78a4d9 (update)
 **/*.html
 **/*.min.js
