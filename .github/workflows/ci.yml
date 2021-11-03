@@ -2,16 +2,14 @@ name: CI
 on: [pull_request]
 jobs:
   test:
-    # name: runner / eslint
+    name: runner / eslint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: eslint --ignore-path .eslintignore --fix pages/index.js --no-ignore
-        uses: reviewdog/action-eslint@v1
+      - uses: actions/checkout@v2
+      - uses: reviewdog/action-eslint@v1
         with:
           reporter: github-pr-review # Change reporter.
-          # eslint_flags: 'src/**'
-          workdir: './'
+          eslint_flags: './'
 # name: CI
 
 # on: [pull_request, pull_request_target]
