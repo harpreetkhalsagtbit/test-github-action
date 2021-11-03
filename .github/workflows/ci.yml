@@ -19,7 +19,7 @@ on:
   #   branches-ignore: [master, main]
   #   # Remove the line above to run when pushing to master
   pull_request:
-    branches: [master, main]
+    branches: [main]
 
 ###############
 # Set the Job #
@@ -51,7 +51,7 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: master
+          DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
 # name: CI
 # on: [pull_request]
