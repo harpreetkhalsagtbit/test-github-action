@@ -10,5 +10,5 @@ function test(variable) {
 	return variable;
 }
 test(j);
-console.log(j);
+console.log(j)
 x.y();
