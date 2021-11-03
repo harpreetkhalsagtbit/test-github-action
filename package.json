@@ -5,9 +5,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint index.js"
+    "lint": "eslint index.js --ignore-path .eslintignore --fix"
   },
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "next": "12.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
