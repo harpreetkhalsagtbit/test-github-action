@@ -62,6 +62,7 @@ jobs:
           LINTER_RULES_PATH: /
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
           VALIDATE_JAVASCRIPT_STANDARD: false
+          IGNORE_GITIGNORED_FILES	: true
 
 # name: CI
 # on: [pull_request]
