@@ -44,6 +44,12 @@ jobs:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
+      - name: Install Dependencies
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install
+
       ################################
       # Run Linter against code base #
       ################################
