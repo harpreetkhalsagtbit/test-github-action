@@ -1,0 +1,11 @@
+{
+	"useTabs": true,
+	"tabWidth": 2,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"eslintIntegration": true,
+	"printWidth": 100,
+	"eslint.enable": true,
+	"eslint.autoFixOnSave": true,
+	"eslint.alwaysShowStatus": true
+}
