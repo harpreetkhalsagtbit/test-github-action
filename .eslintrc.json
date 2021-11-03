@@ -1,3 +1,30 @@
 {
-  "extends": "eslint:recommended"
+	"extends": ["prettier"],
+	"plugins": ["prettier", "import"],
+	"parser": "babel-eslint",
+	"rules": {
+		"linebreak-style": 0,
+		"no-underscore-dangle": 0,
+		"import/imports-first": ["error", "absolute-first"],
+		"import/newline-after-import": "error",
+		"prettier/prettier": "error",
+		"no-unused-expressions": [
+			"error",
+			{
+				"allowTernary": true
+			}
+		]
+	},
+	"settings": {},
+	"globals": {
+		"alert": true,
+		"confirm": true,
+		"window": true,
+		"document": true,
+		"localStorage": true,
+		"FormData": true,
+		"FileReader": true,
+		"Blob": true,
+		"navigator": true
+	}
 }
