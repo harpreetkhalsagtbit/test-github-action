@@ -22,3 +22,5 @@ configs/adpushup.js/config.js
 cypress-tests-report.json
 mochawesome-report
 cypress
+package.json
+package-lock.json

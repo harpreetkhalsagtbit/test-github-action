@@ -5,7 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint index.js --ignore-path .eslintignore --fix"
+    "lint": "eslint --ignore-path .eslintignore --fix"
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",
