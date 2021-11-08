@@ -12,4 +12,4 @@ function test(variable) {
 test(j);
 console.log(j);
 x.y();
-console.log('I am merged into dev automatically - try 6');
+console.log('I am merged into dev automatically - try 7');
