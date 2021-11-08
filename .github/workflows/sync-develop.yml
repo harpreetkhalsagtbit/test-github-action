@@ -23,6 +23,10 @@ jobs:
           GITHUB_TOKEN: ${{secrets.TOKEN}}
           FROM_BRANCH: 'main'
           TO_BRANCH: 'develop'
+  automerge:
+    runs-on: ubuntu-latest
+    name: Syncing branches
+    steps:
       - name: automerge
         uses: "pascalgn/automerge-action@v0.14.3"
         env:
