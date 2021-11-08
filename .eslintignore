@@ -24,3 +24,4 @@ mochawesome-report
 cypress
 package.json
 package-lock.json
+ignore.js
