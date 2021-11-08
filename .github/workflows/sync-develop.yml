@@ -35,3 +35,4 @@ jobs:
           MERGE_REQUIRED_APPROVALS: "1"
           UPDATE_LABELS: "automerge"
           UPDATE_METHOD: "merge"
+          MERGE_RETRY_SLEEP: "60000"
