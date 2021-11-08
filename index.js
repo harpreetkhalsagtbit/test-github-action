@@ -11,4 +11,5 @@ function test(variable) {
 }
 test(j);
 console.log(j);
+console.log(j);
 x.y();
