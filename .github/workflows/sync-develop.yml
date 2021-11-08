@@ -21,7 +21,7 @@ jobs:
         uses: tretuna/sync-branches@1.2.0
         with:
           GITHUB_TOKEN: ${{secrets.TOKEN}}
-          FROM_BRANCH: 'master'
+          FROM_BRANCH: 'main'
           TO_BRANCH: 'develop'
       - name: automerge
         uses: "pascalgn/automerge-action@v0.14.3"
