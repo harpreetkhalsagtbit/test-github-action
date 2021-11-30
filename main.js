@@ -234,7 +234,7 @@ var utils = require('./libs/utils'),
 		ads.push({
 			container: container,
 			ad: ad
-		});
+		})
 	};
 
 module.exports = {
