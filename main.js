@@ -13,6 +13,7 @@ var utils = require('./libs/utils'),
 	cssescape = require('./libs/css.escape'),
 	ads = [],
 	inViewAds = [],
+	k=5,
 	setRefreshTimeOut = function (container, ad, refreshInterval) {
 		if (container.length && utils.checkElementInViewPercent(container)) {
 			var refreshInterval =
