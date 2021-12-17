@@ -1,7 +1,7 @@
 var w = window;
 var pageGroupTimer;
 var adp = (w.adpushup = w.adpushup || {});
-
+console.log(x)
 var utils = require('./libs/utils');
 var EventLogger = require('./libs/eventLogger');
 var commonConsts = require('./config/commonConsts');
